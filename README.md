@@ -1,61 +1,27 @@
 # Awesome X402 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> ⚡ **The Ultimate x402 Resource Hub** - Everything you need to build internet-native payments using HTTP 402. Perfect for AI agents, APIs, and micropayments. Build paywalls, monetize services, and enable autonomous agent payments with crypto/USDC. Zero fees, 2-second settlement.
-
-[![GitHub stars](https://img.shields.io/github/stars/xpaysh/awesome-x402?style=social)](https://github.com/xpaysh/awesome-x402)
-![Weekly transactions](https://img.shields.io/badge/transactions-500K%2Fweek-brightgreen)
-![Settlement time](https://img.shields.io/badge/settlement-2%20seconds-blue)
+> A curated list of resources for the X402 protocol, the HTTP 402 Payment Required standard for machine-to-machine payments.
 
 ## Contents
 
-- [🎯 Quick Start - Become an x402 Champion](#-quick-start---become-an-x402-champion)
-- [📚 Official Resources](#-official-resources)
-- [📖 Protocol Documentation](#-protocol-documentation)
-- [🚀 Quickstart Guides](#-quickstart-guides)
-- [⚙️ Protocol Implementations](#-protocol-implementations)
-- [🏭 Production Implementations](#-production-implementations)
-- [🛠️ SDKs & Client Libraries](#-sdks--client-libraries)
-- [🔧 Server Frameworks & Middleware](#-server-frameworks--middleware)
-- [🏗️ Facilitators](#-facilitators)
-- [💡 Example Applications](#-example-applications)
-- [🎨 Use Cases & Patterns](#-use-cases--patterns)
-- [🤖 AI Agent Integration](#-ai-agent-integration)
-- [🔨 Tools & Utilities](#-tools--utilities)
-- [🧪 Testing & Development](#-testing--development)
-- [📚 Tutorials & Learning Resources](#-tutorials--learning-resources)
-- [🎥 Videos & Talks](#-videos--talks)
-- [📝 Articles & Blog Posts](#-articles--blog-posts)
-- [👥 Community](#-community)
-- [🌟 Ecosystem Projects](#-ecosystem-projects)
-- [📊 Ecosystem Market Data](#-ecosystem-market-data)
-- [🚀 Migration Guides](#-migration-guides)
-- [🔒 Security & Audits](#-security--audits)
-- [🔗 Related Protocols](#-related-protocols)
-- [🤝 Contributing](#-contributing)
-- [Awesome Lists](#awesome-lists)
+- [Official Resources](#official-resources)
+- [Protocol Documentation](#protocol-documentation)
+- [Quickstart Guides](#quickstart-guides)
+- [Protocol Implementations](#protocol-implementations)
+- [SDKs & Client Libraries](#sdks--client-libraries)
+- [Server Frameworks & Middleware](#server-frameworks--middleware)
+- [Facilitators](#facilitators)
+- [Example Applications](#example-applications)
+- [AI Agent Integration](#ai-agent-integration)
+- [Tools](#tools)
+- [Testing & Development](#testing--development)
+- [Articles & Blog Posts](#articles--blog-posts)
+- [Community](#community)
+- [Ecosystem Projects](#ecosystem-projects)
+- [Security & Audits](#security--audits)
+- [Related Protocols](#related-protocols)
 
-The x402 protocol enables instant Blockchain payments over HTTP using the 402 "Payment Required" status code. This is your complete guide to mastering x402 and building the future of agent payments.
-
-🚀 **Start building in 5 minutes** | 📈 **500K+ transactions/week** | 💰 **$180M+ ecosystem** | ⚡ **2-second settlement**
-
----
-
-## 🎯 Quick Start - Become an x402 Champion
-
-**New to x402?** Follow this path to mastery:
-
-1. [5-Minute Quickstart](https://docs.cdp.coinbase.com/x402/quickstart-sellers) - Accept your first payment.
-2. Choose Your Stack - Find your language/framework.
-3. Copy an Example - Working code you can run immediately.
-4. Join the Community - Get help from other builders.
-
-**For AI Agents:** Start with [MCP Integration](#model-context-protocol-mcp) to enable Claude/other agents to make autonomous payments.
-
----
-
-## 📚 Official Resources
-
-Core resources from the x402 protocol maintainers.
+## Official Resources
 
 - [x402 Protocol Specification](https://github.com/coinbase/x402) - Official open-source protocol implementation by Coinbase.
 - [x402 Foundation](https://x402.org) - Protocol foundation website with overview and documentation.
@@ -65,9 +31,7 @@ Core resources from the x402 protocol maintainers.
   - [Payment Schemes](https://github.com/coinbase/x402/tree/main/specs/schemes) - Different payment flow types.
   - [EVM Implementation](https://github.com/coinbase/x402/blob/main/specs/schemes/exact/scheme_exact_evm.md) - Ethereum Virtual Machine specifics.
 
-## 📖 Protocol Documentation
-
-Essential documentation for understanding and implementing x402.
+## Protocol Documentation
 
 - [How x402 Works](https://docs.cdp.coinbase.com/x402/how-it-works) - Complete payment flow explanation with diagrams.
 - [Payment Requirements Schema](https://github.com/coinbase/x402#payment-requirements) - JSON structure for payment requests.
@@ -76,19 +40,15 @@ Essential documentation for understanding and implementing x402.
 - [EIP-3009 TransferWithAuthorization](https://eips.ethereum.org/EIPS/eip-3009) - Gasless transfer standard used by x402.
 - [HTTP 402 Status Code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402) - The long-dormant HTTP status.
 
-## 🚀 Quickstart Guides
+## Quickstart Guides
 
-Get started with x402 in minutes.
-
-- 5-Minute Quickstart for Sellers - Accept your first payment.
+- [Seller Quickstart](https://docs.cdp.coinbase.com/x402/quickstart-sellers) - Accept your first payment.
 - [Buyer/Client Setup](https://docs.cdp.coinbase.com/x402/quickstart-buyers) - Make automated payments.
 - [One-Line Integration](https://github.com/coinbase/x402/tree/main/examples) - Add payment middleware in a single line of code.
 - [Base Sepolia Testnet Setup](https://docs.cdp.coinbase.com/x402/network-support) - Get test USDC and start testing.
 - [Production Deployment Checklist](https://github.com/coinbase/x402/blob/main/DEPLOYMENT.md) - Go live on Base mainnet.
 
-## ⚙️ Protocol Implementations
-
-Official and community implementations of the x402 protocol.
+## Protocol Implementations
 
 ### TypeScript/JavaScript
 
@@ -115,71 +75,19 @@ Official and community implementations of the x402 protocol.
 - [x402-axum](https://github.com/x402-rs/x402-rs/tree/main/x402-axum) - Axum web framework integration.
 - [x402-reqwest](https://github.com/x402-rs/x402-rs/tree/main/x402-reqwest) - Reqwest HTTP client wrapper.
 
-### Other Languages
-
-- [x402-go](https://github.com/x402-protocol/x402-go) - Go implementation *(community-maintained)*.
-- [x402-ruby](https://github.com/x402-protocol/x402-ruby) - Ruby gem *(community-maintained)*.
-- [x402-java](https://github.com/x402-protocol/x402-java) - Java SDK *(community-maintained)*.
-- [x402-php](https://github.com/x402-protocol/x402-php) - PHP library *(community-maintained)*.
-
-## 🏭 Production Implementations
-
-Real companies using x402 in production with proven scale and transaction volumes.
-
-### High-Volume Production Deployments
-
-- [AIsa](https://aisa.network) - Leading x402 payment processor with **10.5M+ cumulative transactions** on the x402 network, demonstrating massive production scale for autonomous agent payments and micropayment infrastructure.
-- [Bitget](https://www.bitget.com) - Major cryptocurrency exchange integrating x402 for seamless payment flows, enabling instant settlements and gasless transfers for trading operations.
-- [Coinbase Developer Platform](https://coinbase.com/developer-platform) - Official CDP implementation processing hundreds of thousands of transactions weekly with enterprise-grade reliability and 2-second settlement times.
-- [Cloudflare Workers](https://workers.cloudflare.com) - Edge computing platform with x402 integration serving global distributed payment verification at scale across 300+ data centers.
-
-### Production Success Metrics
-
-**Key Performance Indicators:**
-- 10.5M+ transactions - AIsa cumulative network volume
-- 500K+ weekly transactions - Ecosystem-wide payment activity
-- $180M+ market cap - Combined ecosystem valuation
-- 2-second settlement - Average production payment finality
-- 10,000%+ growth - Year-over-year transaction volume increase
-
-### Multi-Chain Production Support
-
-| Chain         | Status      | Facilitators               | Settlement      | Production Examples       |
-| ------------- | ----------- | -------------------------- | --------------- | ------------------------- |
-| Base          | Production  | Coinbase CDP, Cloudflare   | Instant (2s)    | AIsa, Bitget, thirdweb    |
-| Base Sepolia  | Testnet     | Coinbase CDP               | Instant (2s)    | Development, Testing      |
-| Ethereum      | Production  | Cloudflare                 | Deferred        | Enterprise DApps          |
-| Solana        | Production  | Community                  | Instant (<1s)   | High-frequency trading    |
-| BNB Chain     | Production  | Pieverse                   | Instant (2s)    | Gaming, NFTs              |
-
-### Enterprise Adoption
-
-Major tech companies leveraging x402 in production include **Coinbase** (Native CDP integration, primary facilitator), **Cloudflare** (Edge payment processing infrastructure), **Google** (Agent-to-Agent A2A payment protocol development), **Visa** (Enterprise payment rail exploration), and **thirdweb** (AI agent transaction framework Nebula).
-
-## 🛠️ SDKs & Client Libraries
-
-Client libraries for making x402 payments.
+## SDKs & Client Libraries
 
 ### JavaScript/TypeScript
 
-**HTTP Clients**
 - [x402-got](https://www.npmjs.com/package/x402-got) - Got HTTP client integration.
-
-**Wallet Integration**
-- [viem](https://viem.sh/) - TypeScript library used for signing payments.
-- [ethers.js](https://docs.ethers.org/) - Alternative Ethereum library.
-
-### Python
-
-- [x402 httpx adapter](https://github.com/x402-protocol/x402-httpx) - Async HTTP client with x402.
+- [viem](https://viem.sh/) - TypeScript library for signing payments.
+- [ethers.js](https://docs.ethers.org/) - Ethereum library.
 
 ### Rust
 
 - [alloy](https://github.com/alloy-rs/alloy) - High-performance Ethereum library.
 
-## 🔧 Server Frameworks & Middleware
-
-Server-side integrations for accepting x402 payments.
+## Server Frameworks & Middleware
 
 ### Node.js/TypeScript
 
@@ -201,510 +109,71 @@ Server-side integrations for accepting x402 payments.
 **Axum**
 - [Axum server example](https://github.com/x402-rs/x402-rs/tree/main/x402-axum-example) - Full implementation.
 
-## 🏗️ Facilitators
+## Facilitators
 
-Payment verification and settlement services.
+- [Coinbase CDP Facilitator](https://docs.cdp.coinbase.com/x402/facilitator) - Official hosted facilitator on Base.
+- [Cloudflare Workers Facilitator](https://developers.cloudflare.com/workers/examples/x402/) - Edge computing facilitator.
+- [x402-rs Facilitator](https://github.com/x402-rs/x402-rs#facilitator) - Self-hosted Rust facilitator.
 
-**Hosted Facilitators:**
-
-- Coinbase CDP - Official hosted facilitator on Base/Base Sepolia with instant settlement.
-- [Cloudflare x402](https://blog.cloudflare.com/x402/) - Edge computing facilitator on Base/Ethereum with deferred settlement.
-- [BNB Chain Pieverse](https://twitter.com/BNBChainDevs/status/1983198549039780026) - BNB Chain facilitator with instant settlement.
-
-### Self-Hosted Facilitators
-
-- x402-rs Facilitator - Production-grade Rust facilitator.
-  - Docker deployment support
-  - Multi-chain configuration
-  - REST API endpoints (/verify, /settle)
-- [Running Your Own Facilitator](https://github.com/x402-rs/x402-rs#facilitator) - Setup guide.
-
-## 💡 Example Applications
-
-Full working examples and templates.
-
-### Full-Stack Applications
+## Example Applications
 
 - [Weather API Service](https://github.com/coinbase/x402/tree/main/examples/typescript/clients) - Simple paid API endpoint.
-- Next.js App - Complete web application.
 - [Video Paywall](https://www.quicknode.com/guides/infrastructure/how-to-use-x402-payment-required) - Premium content access tutorial.
-- Browser Wallet Template - React + Hono + Session management.
 - [Farcaster Mini App](https://github.com/coinbase/x402/tree/main/examples/typescript/fullstack/farcaster-miniapp) - Social app integration.
-
-### API Examples
-
 - [REST API with Auth Pricing](https://github.com/coinbase/x402/tree/main/examples/typescript/fullstack/auth_based_pricing) - SIWE + dynamic pricing.
-- [AI Chat API](https://github.com/examples/ai-chat-api) - Per-message payment model.
-- [File Storage API](https://github.com/examples/storage-api) - Pay-per-download pattern.
-
-### Client Examples
-
 - [Axios Client](https://github.com/coinbase/x402/tree/main/examples/typescript/clients/axios) - Automatic payment handling.
-- [Fetch Client](https://github.com/coinbase/x402/tree/main/examples/typescript/clients/fetch) - Fetch API wrapper demo.
-- [Python Requests](https://github.com/coinbase/x402/tree/main/examples/python/client) - Python client example.
+- [Fetch Client](https://github.com/coinbase/x402/tree/main/examples/typescript/clients/fetch) - Fetch API wrapper.
+- [Python Client](https://github.com/coinbase/x402/tree/main/examples/python/client) - Python example.
 
-## 🎨 Use Cases & Patterns
+## AI Agent Integration
 
-Real-world use cases and implementation patterns. The x402 protocol has seen **10,000%+ transaction growth**, evolving from a developer curiosity to a full-blown market narrative with production deployments across major tech companies including **Coinbase, Cloudflare, Google, and Visa**.
-
-### By Industry
-
-**AI & Autonomous Agents**
-- Context purchasing (Anthropic MCP)
-- Tool marketplace access
-- Real-time data feeds for trading bots
-- Compute resource allocation
-
-**Content & Media**
-- Per-article paywalls
-- Video streaming (pay-per-view)
-- Music licensing per play
-- Premium podcast episodes
-
-**Data & APIs**
-- Weather data services
-- Financial market data
-- Geolocation services
-- Real-time sports scores
-
-**Infrastructure**
-- Cloud storage (pay-per-GB)
-- Compute time (pay-per-second)
-- CDN bandwidth
-- API rate limiting bypass
-
-### By Payment Pattern
-
-**Micropayments (< $0.10):** API calls ($0.001 per request for weather data, geocoding), Content views ($0.01 per article read, $0.05 per premium video), Data queries ($0.001 per database query, $0.005 per market data point), LLM inference ($0.01 per 1K tokens, $0.10 per image generation).
-
-**Production Pricing Examples:** Weather API ($0.001 per API call), Article paywalls ($0.01 - $0.25 per article), Video streaming ($0.50 - $2.00 per video), Market data feeds ($0.005 per real-time quote), AI model inference ($0.01 - $0.50 per request).
-
-**Metered Billing**
-- Token-based LLM APIs - Pay per token/request
-- Time-based service access - Per second/minute billing
-- Usage-based pricing tiers - Volume discounts at scale
-
-**Session-Based**
-- Aggregate usage into single payment
-- Deferred settlement patterns
-- Batch processing
-
-### Production Patterns
-
-- Dynamic Pricing Strategy - SIWE authentication with conditional pricing.
-- [Rate Limiting](https://github.com/examples/rate-limiting) - Payment-based rate limit bypass.
-- [Caching Strategy](https://github.com/examples/caching) - Cache payment requirements.
-- [Error Handling](https://github.com/examples/error-handling) - Graceful payment failures.
-- [Refund Patterns](https://github.com/examples/refunds) - Handling refunds and disputes.
-
-## 🤖 AI Agent Integration
-
-Enable AI agents to make autonomous payments.
-
-### Model Context Protocol (MCP)
-
-- Anthropic MCP Integration - Official Claude integration.
-- x402 MCP Server - Claude Desktop ready server.
-- [MCP Server Setup Guide](https://docs.cdp.coinbase.com/x402/mcp-server) - Complete installation instructions.
-- Embedded Wallet MCP - Electron-based wallet for MCP.
-
-### Agent Frameworks
-
-- [LangChain x402 Tool](https://github.com/examples/langchain-x402) - LangChain integration.
-- [AutoGPT Plugin](https://github.com/examples/autogpt-x402) - Autonomous task payments.
+- [MCP Server Setup Guide](https://docs.cdp.coinbase.com/x402/mcp-server) - Claude Desktop integration.
 - [NEAR AI](https://near.ai) - Cross-chain agent settlements.
-- [Phidata Agents](https://github.com/phidatahq/phidata) - Multi-modal agents with x402.
-
-### Agent-to-Agent (A2A)
-
+- [Phidata Agents](https://github.com/phidatahq/phidata) - Multi-modal agents.
 - [Google A2A x402 Extension](https://github.com/google-agentic-commerce/a2a-x402) - Agent commerce protocol.
-  - Python and TypeScript implementations
-  - Payment-required, payment-submitted, payment-completed flow
-  - Multi-agent payment orchestration
 
-### Agent Examples
+## Tools
 
-- [Autonomous Trading Bot](https://github.com/examples/trading-bot) - Pays for market data.
-- [Content Scraper Agent](https://github.com/examples/scraper-agent) - Pays per scrape.
-- [Research Assistant](https://github.com/examples/research-agent) - Purchases academic papers.
-
-## 🔨 Tools & Utilities
-
-Development tools and utilities for x402.
-
-### CLI Tools
-
-- [x402-cli](https://github.com/tools/x402-cli) - Command-line testing and deployment.
-- [x402-inspect](https://github.com/tools/x402-inspect) - Debug payment flows.
 - [Foundry](https://getfoundry.sh/) - Smart contract development toolkit.
 
-### Browser Extensions
-
-- [x402 DevTools](https://github.com/tools/x402-devtools) - Browser extension for debugging.
-- [Payment Inspector](https://github.com/tools/payment-inspector) - View payment requirements.
-
-### Monitoring & Analytics
-
-- [x402 Dashboard](https://github.com/tools/x402-dashboard) - Revenue analytics dashboard.
-- Dune Analytics - On-chain metrics and visualizations.
-- [x402 Prometheus Exporter](https://github.com/tools/x402-prometheus) - Metrics exporter.
-
-### Payment Generators
-
-- [Payment Requirement Builder](https://github.com/tools/payment-builder) - Visual payment requirement creator.
-- [Price Calculator](https://github.com/tools/price-calculator) - Calculate optimal pricing.
-
-## 🧪 Testing & Development
-
-Tools and resources for testing x402 implementations.
-
-### Testnets
+## Testing & Development
 
 - [Base Sepolia Testnet](https://docs.base.org/docs/network-information) - Primary testnet.
-- [Base Sepolia USDC Faucet](https://faucet.circle.com/) - Get test USDC.
-- [Base Sepolia Bridge](https://bridge.base.org/) - Bridge test ETH.
+- [USDC Faucet](https://faucet.circle.com/) - Get test USDC.
+- [Base Bridge](https://bridge.base.org/) - Bridge test ETH.
 
-### Testing Tools
-
-- [x402-test-suite](https://github.com/testing/x402-test-suite) - Integration test framework.
-- [Mock Facilitator](https://github.com/testing/mock-facilitator) - Local development facilitator.
-- [Payment Simulator](https://github.com/testing/payment-simulator) - Simulate payment flows.
-
-### Postman/Insomnia
-
-- [x402 Postman Collection](https://github.com/testing/x402-postman) - API testing collection.
-- [Insomnia Workspace](https://github.com/testing/x402-insomnia) - REST client workspace.
-
-### CI/CD Integration
-
-- [GitHub Actions Workflow](https://github.com/testing/x402-ci) - Automated testing pipeline.
-- [GitLab CI Example](https://github.com/testing/x402-gitlab) - GitLab CI/CD configuration.
-
-## 📚 Tutorials & Learning Resources
-
-Guides and tutorials for learning x402.
-
-### Beginner Tutorials
-
-- Your First x402 API (5 min) - Official quickstart.
-- [Understanding Payment Flows](https://blog.thirdweb.com/what-is-x402-protocol) - Visual explanation.
-- Building a Paid Weather API - Step-by-step tutorial.
-- Client Setup Guide - Making payments.
-
-### Intermediate Tutorials
-
-- [Multi-Chain Support](https://github.com/tutorials/multi-chain) - Deploy on multiple chains.
-- Authentication + Dynamic Pricing - SIWE integration.
-- [Rate Limiting Strategies](https://github.com/tutorials/rate-limiting) - Implement rate limits.
-- [Session Management](https://github.com/tutorials/sessions) - Aggregate payments.
-
-### Advanced Tutorials
-
-- Building a Custom Facilitator - Self-host verification.
-- [Gas Optimization Techniques](https://github.com/tutorials/gas-optimization) - EIP-3009 deep dive.
-- [High-Throughput APIs](https://github.com/tutorials/scaling) - Handle 1000+ req/sec.
-- [Security Hardening](https://github.com/tutorials/security) - Production security.
-
-### Code Patterns
-
-- [Error Handling Patterns](https://github.com/patterns/error-handling) - Handle edge cases.
-- [Retry Logic](https://github.com/patterns/retry-logic) - Implement retries.
-- [Caching Strategies](https://github.com/patterns/caching) - Optimize performance.
-
-## 🎥 Videos & Talks
-
-Video content about x402.
-
-### Official Videos
-
-- [Introducing x402 - Coinbase](https://www.youtube.com/watch?v=x402) - Protocol announcement.
-- [x402 Deep Dive](https://www.youtube.com/watch?v=x402-deep) - Technical explanation.
-- [Building with x402](https://www.youtube.com/watch?v=x402-build) - Developer walkthrough.
-
-### Conference Talks
-
-- [a16z State of Crypto 2025](https://a16z.com/state-of-crypto-2025/) - Future of agent payments.
-- [ETHDenver 2025 - x402 Workshop](https://www.youtube.com/watch?v=ethdenver-x402) - Hands-on workshop.
-- [DevCon Bangkok - HTTP 402](https://www.youtube.com/watch?v=devcon-402) - Protocol evolution.
-
-### Tutorial Videos
-
-- [Building Your First x402 API](https://www.youtube.com/watch?v=first-x402-api) - 20-minute tutorial.
-- [AI Agents with x402](https://www.youtube.com/watch?v=ai-agents-x402) - Agent integration.
-- [From Stripe to x402](https://www.youtube.com/watch?v=stripe-to-x402) - Migration guide.
-
-## 📝 Articles & Blog Posts
-
-Written content about x402.
-
-### Official Blog Posts
+## Articles & Blog Posts
 
 - [Introducing x402](https://www.coinbase.com/developer-platform/discover/launches/x402) - Coinbase announcement.
-- Cloudflare x402 Foundation - Partnership announcement.
-- x402 Technical Whitepaper - Complete specification.
+- [Cloudflare and x402](https://blog.cloudflare.com/x402/) - Cloudflare integration.
+- [What is X402](https://blog.thirdweb.com/what-is-x402-protocol) - Thirdweb explainer.
+- [x402 Growth](https://finance.yahoo.com/news/coinbase-x402-ai-payments-protocol-130700006.html) - Yahoo Finance coverage.
 
-### Technical Deep Dives
+## Community
 
-- How x402 Works - Technical explanation.
-- [EIP-3009 Explained](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/) - Gasless transfers.
-- [x402 vs Traditional Payments](https://blog.example.com/x402-vs-traditional) - Comparison study.
-
-### Use Case Articles
-
-- [AI Agents Need x402](https://a16z.com/ai-agent-payments/) - Future of autonomous payments.
-- [Micropayments Finally Work](https://blog.example.com/micropayments) - Economic analysis.
-- [Building the Agent Economy](https://blog.example.com/agent-economy) - Market opportunity.
-
-### News Coverage
-
-- [x402 Sees 10,000% Growth](https://finance.yahoo.com/news/coinbase-x402-ai-payments-protocol-130700006.html) - Yahoo Finance.
-- [Cloudflare Joins x402](https://techcrunch.com/cloudflare-x402) - TechCrunch coverage.
-- [The HTTP 402 Awakens](https://arstechnica.com/http-402) - Ars Technica feature.
-
-## 👥 Community
-
-Connect with the x402 community.
-
-### Official Channels
-
-- [x402 Foundation Discord](https://discord.gg/x402) - Official community server.
-- [GitHub Discussions](https://github.com/coinbase/x402/discussions) - Technical Q&A and RFCs.
-- [Twitter @x402org](https://twitter.com/x402org) - Official updates and announcements.
-
-### Developer Communities
-
-- [x402 Builders Telegram](https://t.me/x402builders) - Active developer chat.
-- [Reddit r/x402](https://reddit.com/r/x402) - Community forum and discussions.
+- [GitHub Discussions](https://github.com/coinbase/x402/discussions) - Technical Q&A.
 - [Dev.to #x402](https://dev.to/t/x402) - Tutorials and articles.
-- [Farcaster x402 Channel](https://warpcast.com/~/channel/x402) - Decentralized social.
 
-### Events & Meetups
+## Ecosystem Projects
 
-- [x402 Hackathons](https://x402.org/hackathons) - Upcoming hackathons and prizes.
-- [Weekly Office Hours](https://calendar.x402.org) - Live Q&A with core team.
-- [Local Meetups](https://meetup.com/x402) - In-person gatherings.
-
-### Newsletters
-
-- [x402 Weekly](https://x402.org/newsletter) - Weekly protocol updates.
-- [Agent Economy Digest](https://agenteconomy.substack.com) - AI agent payments news.
-
-## 🌟 Ecosystem Projects
-
-Projects building with or extending x402.
-
-### Infrastructure
-
-- [Coinbase Developer Platform](https://coinbase.com/cloud) - Hosted facilitator service with enterprise-grade reliability and instant settlement.
-- Cloudflare x402 - Edge payment processing.
+- [Coinbase Developer Platform](https://coinbase.com/cloud) - Hosted facilitator service.
 - [thirdweb Nebula](https://thirdweb.com/nebula) - AI agent transaction framework.
+- [Chainlink](https://chain.link) - Oracle network integration.
 
-### Tools & Services
+## Security & Audits
 
-- [Apexti Toolbelt](https://apexti.io) - 1,500+ Web3 APIs via x402 MCP servers.
-- [Zyte.com](https://www.zyte.com) - Web scraping with x402 payments.
-- [BuffetPay](https://buffetpay.com) - Smart x402 payments with guardrails.
-- [Cal.com](https://cal.com) - Automated scheduling with payments.
-- [AIAgentStore.ai](https://aiagentstore.ai/developer) - Insights for founders with x402 payments.
+- [Circle USDC Audits](https://www.circle.com/en/usdc/security-audits) - USDC contract audits.
+- [EIP-3009 Security](https://eips.ethereum.org/EIPS/eip-3009#security-considerations) - Security considerations.
+- [Payment Verification](https://github.com/coinbase/x402/blob/main/SECURITY.md) - Verification implementation.
+- [Coinbase Bug Bounty](https://hackerone.com/coinbase) - Report vulnerabilities.
 
-### DeFi & Finance
+## Related Protocols
 
-- [Cred Protocol](https://credprotocol.com) - Decentralized credit scoring.
-- [Chainlink VRF](https://chain.link) - Random NFT minting with payment demo.
-
-### Developer Tools
-
-- NEAR AI - Cross-chain agent settlements.
-- [Boosty Labs](https://boosty.io) - AI agents buying real-time insights.
-
-## 📊 Ecosystem Market Data
-
-Live metrics and on-chain analytics for the x402 ecosystem.
-
-### Market Overview
-
-**Ecosystem Market Cap**: $815 million combined market capitalization of x402 ecosystem tokens. **Weekly Transactions**: 500K+ payment settlements across all chains. **Cumulative Transactions**: 10.5M+ total transactions processed on AIsa network. **Transaction Growth**: 10,000%+ year-over-year increase in payment volume. **Settlement Time**: 2-second average across production deployments.
-
-### Analytics Dashboards
-
-- [Dune Analytics x402](https://dune.com/x402) - Comprehensive on-chain metrics and visualizations including real-time transaction volumes, chain-by-chain analytics, facilitator comparison data, and revenue/fee metrics.
-- [x402scan Explorer](https://x402scan.com) - Blockchain explorer for x402 payments with transaction search and verification, payment requirement inspection, and settlement status tracking.
-- [CoinGecko x402 Category](https://coingecko.com/en/categories/x402) - Token tracking and market data featuring $180M+ tracked market cap, price charts, trading volumes, and ecosystem token listings.
-
-### Growth Metrics
-
-Evolution from developer curiosity to production scale: **Q1 2024** (Initial protocol launch), **Q2 2024** (Major tech company integrations including Coinbase and Cloudflare), **Q3 2024** (AIsa crosses 5M transactions milestone), **Q4 2024** (10,000%+ growth with $815M ecosystem valuation), **2025** (Google A2A protocol and Visa enterprise exploration).
-
-### Network Statistics
-
-| Metric              | Value      | Source                  |
-| ------------------- | ---------- | ----------------------- |
-| Total Transactions  | 10.5M+     | AIsa Network            |
-| Weekly Volume       | 500K+      | Ecosystem-wide          |
-| Market Cap          | $815M      | Benzinga, CoinGecko     |
-| Settlement Speed    | 2 seconds  | Production avg          |
-| Supported Chains    | 5+         | Base, ETH, SOL, BNB     |
-| Active Facilitators | 10+        | Hosted + Self-hosted    |
-
-## 🚀 Migration Guides
-
-Comprehensive guides for migrating from traditional payment systems to x402.
-
-### From Traditional Payment Processors
-
-- [From Stripe to x402](https://docs.cdp.coinbase.com/x402/migrate/stripe) - Migrate subscription and one-time payments from Stripe to x402 for crypto-native payments with instant settlement. Includes API comparison, webhook migration strategies, customer migration approaches, and zero-fee cost analysis.
-- [From PayPal to x402](https://github.com/guides/migrate-paypal) - Replace PayPal fees (2.9% + $0.30) with zero-fee x402 settlements. Covers checkout flow conversion, IPN to x402 webhooks, and international payment handling.
-
-### From Authentication to Payments
-
-- [From API Keys to x402 Payments](https://docs.cdp.coinbase.com/x402/migrate/api-keys) - Replace API key-based access control with payment-per-use models. Includes authentication middleware replacement, rate limiting evolution, revenue model transformation, and pay-per-request implementation.
-- [From OAuth to x402](https://github.com/guides/migrate-oauth) - Combine identity with payments for premium API access. Covers SIWE + x402 integration, token-gated + paid content, and dynamic pricing by identity.
-
-### From Subscription to Usage-Based
-
-- [From Subscription to Pay-Per-Use](https://docs.cdp.coinbase.com/x402/migrate/subscriptions) - Transform monthly subscriptions into granular pay-as-you-go pricing. Includes SaaS model evolution, pricing psychology and conversion, customer acquisition benefits, and revenue optimization strategies.
-- [From Flat Rate to Metered Billing](https://github.com/guides/metered-billing) - Implement token-based or time-based usage pricing. Covers LLM API pricing models, infrastructure cost passthrough, and usage tracking and aggregation.
-
-### Platform-Specific Migrations
-
-- [WordPress to x402](https://github.com/guides/wordpress-x402) - Add x402 paywalls to WordPress sites replacing traditional payment plugins.
-- [Shopify to x402](https://github.com/guides/shopify-x402) - Enable crypto payments for e-commerce with instant settlement.
-- [Ghost to x402](https://github.com/guides/ghost-x402) - Membership and subscription migration for Ghost publishing platform.
-
-## 🔒 Security & Audits
-
-Security resources and best practices for x402 implementations.
-
-### Smart Contract Audits
-
-- [Coinbase x402 Security Audit](https://github.com/coinbase/x402/blob/main/audits/coinbase-audit-2024.pdf) - Official security audit of x402 protocol smart contracts.
-- [Circle USDC Audits](https://www.circle.com/en/usdc/security-audits) - Comprehensive audits of USDC contracts used in x402 settlements.
-- [EIP-3009 Security Analysis](https://eips.ethereum.org/EIPS/eip-3009#security-considerations) - Security considerations for TransferWithAuthorization.
-
-### Security Best Practices
-
-- [x402 Security Checklist](https://docs.cdp.coinbase.com/x402/security/checklist) - Production deployment security requirements.
-  - Signature verification best practices
-  - Replay attack prevention
-  - Nonce management strategies
-  - Rate limiting and DDoS protection
-
-- [Payment Verification Guide](https://github.com/coinbase/x402/blob/main/SECURITY.md) - Proper payment verification implementation.
-  - Facilitator trust models
-  - On-chain verification fallbacks
-  - Amount and recipient validation
-
-- [Key Management](https://docs.cdp.coinbase.com/x402/security/keys) - Secure private key handling for automated payments.
-  - Hardware wallet integration
-  - Key rotation strategies
-  - Multi-signature setups for high-value
-
-### Known Vulnerabilities & Mitigations
-
-- [CVE Database](https://github.com/coinbase/x402/security/advisories) - Known vulnerabilities and patches.
-- [Replay Attack Prevention](https://docs.cdp.coinbase.com/x402/security/replay) - Nonce and deadline handling.
-- [Front-Running Mitigation](https://github.com/coinbase/x402/blob/main/docs/frontrunning.md) - MEV protection strategies.
-
-### Bug Bounty Programs
-
-- [Coinbase Bug Bounty](https://hackerone.com/coinbase) - Report x402 vulnerabilities for rewards up to $50,000.
-- [Immunefi x402 Program](https://immunefi.com) - Decentralized bug bounty platform.
-
-### Security Monitoring
-
-- [x402 Security Scanner](https://github.com/tools/x402-security-scanner) - Automated security scanning for x402 integrations.
-- [Transaction Monitoring](https://github.com/tools/x402-monitor) - Real-time alert system for suspicious payment activity.
-- [Rate Limiting Tools](https://docs.cdp.coinbase.com/x402/security/rate-limiting) - Prevent abuse and ensure service availability.
-
-## 🔗 Related Protocols
-
-Adjacent protocols and standards.
-
-### Payment Protocols
-
-- [Lightning Network](https://lightning.network/) - Bitcoin Layer 2 micropayments.
-- [Stellar Anchors](https://www.stellar.org/learn/anchors) - Cross-border payments.
+- [Lightning Network](https://lightning.network/) - Bitcoin micropayments.
 - [Request Network](https://request.network/) - Payment request protocol.
-
-### Web Standards
-
-- [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) - Complete reference.
-- EIP-3009 - TransferWithAuthorization.
 - [ERC-20](https://eips.ethereum.org/EIPS/eip-20) - Token standard.
+- [HTTP 402 RFC](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) - Original specification.
 
-### AI & Agent Protocols
-
-- Model Context Protocol (MCP) - Anthropic's context standard.
-- [Agent Protocol (AP2)](https://agentprotocol.ai/) - Agent communication standard.
-- [OpenAI Function Calling](https://platform.openai.com/docs/guides/function-calling) - Tool use API.
-
-### Historical Reference
-
-- [21.co Micropayments](https://21.co) - Early Bitcoin micropayment attempt (2015).
-- [HTTP 402 Proposal](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) - Original RFC (1999).
-
-## 🤝 Contributing
+## Contributing
 
 Contributions welcome! Please read the [contribution guidelines](CONTRIBUTING.md) first.
-
-### How to Contribute
-
-1. Search existing resources to avoid duplicates
-2. Make an individual pull request for each suggestion
-3. Use the following format: `[Resource Name](link) - Description.`
-4. New categories or improvements to the existing structure are welcome
-5. Check your spelling and grammar
-6. Ensure your text editor removes trailing whitespace
-
-### What to Contribute
-
-✅ **Encouraged:**
-- New implementations in different languages
-- Production use cases and case studies
-- Tutorials and educational content
-- Tools and utilities that extend x402
-- Integration examples with popular frameworks
-- Documentation improvements
-
-❌ **Please Avoid:**
-- Spam or promotional links
-- Duplicate resources
-- Incomplete or broken projects
-- Resources not directly related to x402
-
-### Pull Request Guidelines
-
-- Title: Use format `Add [Resource Name]` or `Update [Section]`
-- Description: Briefly explain what you're adding and why it's useful
-- Testing: Ensure any code examples work as expected
-- Links: Verify all links are accessible and correct
-
-### Issue Guidelines
-
-- Use issue templates when available
-- Search existing issues before creating new ones
-- Provide context and examples for bug reports
-- Be respectful and constructive
-
-## Awesome Lists
-
-Looking for more awesome lists?
-
-- [sindresorhus/awesome](https://github.com/sindresorhus/awesome) - The awesome list of awesome lists.
-- [Awesome Blockchain](https://github.com/yjjnls/awesome-blockchain) - Blockchain resources.
-- [Awesome Web3](https://github.com/ahmet/awesome-web3) - Web3 development.
-- [Awesome Ethereum](https://github.com/ttumiel/Awesome-Ethereum) - Ethereum development.
-- [Awesome Crypto](https://github.com/sobolevn/awesome-cryptography) - Cryptography resources.
-
----
-
-<p align="center">
-  <b>🚀 Built with ❤️ by xPay</b><br>
-  <sub>Helping the agentic community get paid and pay safely!</sub><br>
-  <sub>If this helped you become an x402 champion, please ⭐ star the repo and share it!</sub><br><br>
-  <a href="https://x402.org">Official x402 Website</a> •
-  <a href="https://github.com/coinbase/x402">Protocol Repo</a> •
-  <a href="https://docs.cdp.coinbase.com/x402">Documentation</a> •
-  <a href="https://discord.gg/x402">Discord</a> •
-  <a href="https://twitter.com/x402org">Twitter</a>
-</p>
